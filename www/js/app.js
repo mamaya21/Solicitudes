@@ -29,6 +29,19 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
   });
 })
 
+.controller('ControladorLista', ['$http', '$scope', function($http, $scope) {
+  $http.get('http://192.168.1.21/IONICAPPS/Solicitudes/www/ajax/carga_principal.php')
+  //$http.get('ajax/carga_principal.php')
+    .success(function(result){
+      //debugger;
+      $scope.listado={};
+      $scope.listado=result;
+    })
+    .error(function(result){
+      alert('Error: '+result);
+    });
+}])
+
 /*
   This directive is used to disable the "drag to open" functionality of the Side-Menu
   when you are dragging a Slider component.
