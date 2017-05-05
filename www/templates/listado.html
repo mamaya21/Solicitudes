@@ -1,27 +1,59 @@
 
+<ion-view title="Lista de Canciones" id="page4">
 
 
-<ion-pane ng-controller="ControladorLista">
-  <ion-header-bar cla<ss="bar-stable">
-    <h1 class="title">Titulo</h1>
-  </ion-header-bar>
+  <ion-pane ng-controller="ControladorLista">
+    <ion-header-bar cla<ss="bar-stable">
+      <h1 class="title">Titulo</h1>
+    </ion-header-bar>
 
-   <div class="bar bar-subheader item-input-inset bar-light">
-        <label class="item-input-wrapper">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" ng-model="busqueda" placeholder="Buscar">
-        </label>
-      </div>
+    <div class="bar bar-subheader item-input-inset bar-light">
+          <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" ng-model="busqueda" placeholder="Buscar">
+          </label>
+        </div>
 
-  <ion-content class="has-subheader" ng-controller="ControladorLista">
-  <div class="List">
-    <a class="item item-thumbnail-left" href="#" ng-repeat="list in listado | filter: busqueda">
-      <img src="img/persona.png">
-      <h2>{{list.nombre}}</h2>
-      <p>Parrafo</p>
-    </a>
-  </div>
-</ion-content>
+    <ion-content class="has-subheader" ng-controller="ControladorLista">
+    <div class="List">
+      <a class="item item-thumbnail-left" href="#" ng-repeat="list in listado | filter: busqueda">
+        <img src="img/persona.png">
+        <h2>{{list.nombre}}</h2>
+        <p>{{list.artista}}</p>
+      </a>
+    </div>
 
-</ion-pane>
+    <ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="img/slimer.png">
+      </ion-avatar>
+      <h2>Slimer</h2>
+    </ion-item>
+    <ion-item-options side="left">
+      <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Text
+      </button>
+      <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Call
+      </button>
+    </ion-item-options>
+    <ion-item-options side="right">
+      <button ion-button color="primary">
+        <ion-icon name="mail"></ion-icon>
+        Email
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+  </ion-content>
+
+  </ion-pane>
+
+  
+
+</ion-view>
 
