@@ -39,7 +39,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
     })
     .error(function(result){
       alert('Error: '+result);
-    });
+    })
+    $scope.deleteEvent = function(){
+      alert('Funcion a realizar');
+    }
+
+
 }])
 
 /*
