@@ -30,7 +30,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 })
 
 .controller('ControladorLista', ['$http', '$scope', function($http, $scope) {
-  $http.get('http://192.168.0.14/IONICAPPS/Solicitudes/www/ajax/carga_principal.php')
+  $http.get('http://192.168.1.21/IONICAPPS/Solicitudes/www/ajax/carga_principal.php')
   //$http.get('ajax/carga_principal.php')
     .success(function(result){
       //debugger;

@@ -1,6 +1,6 @@
 <?php
 /*Datos de conexion a la base de datos*/
-define('DB_HOST', '192.168.0.14');//DB_HOST:  generalmente suele ser "127.0.0.1"
+define('DB_HOST', '192.168.1.21');//DB_HOST:  generalmente suele ser "127.0.0.1"
 define('DB_USER', 'sistemas');//Usuario de tu base de datos
 define('DB_PASS', 'sistemas2016');//Contraseña del usuario de la base de datos
 define('DB_NAME', 'APP_LS');//Nombre de la base de datos
