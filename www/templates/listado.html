@@ -1,7 +1,6 @@
 
 <ion-view title="Lista de Canciones" id="page4">
 
-
   <ion-pane ng-controller="ControladorLista">
     <ion-header-bar cla<ss="bar-stable">
       <h1 class="title">Titulo</h1>
@@ -12,7 +11,7 @@
             <i class="icon ion-search placeholder-icon"></i>
             <input type="search" ng-model="busqueda" placeholder="Buscar">
           </label>
-        </div>
+      </div>
 
   <ion-content class="has-subheader" ng-controller="ControladorLista">
     <!--<div class="List">
@@ -24,15 +23,19 @@
     </div>-->
 
     <ion-list show-delete="false" can-swipe="true">
-      <ion-item class="item item-thumbnail-left" href="#" ng-repeat="list in listado | filter: busqueda">
-        <img src="img/persona.png">
+      <ion-item class="item item-avatar" href="#" ng-repeat="list in listado | filter: busqueda">
+      <!---<ion-item class="class="item item-avatar"" href="#" ng-repeat="list in listado | filter: busqueda">-->  
+        <img src="img/perro.png">
         <h2>{{list.nombre}}</h2>
         <p>{{list.artista}}</p>
 
-        <ion-option-button class="button-ligth icon ion-heart"></ion-option-button>
-        <ion-option-button class="button-ligth icon ion-email"></ion-option-button>
-        <ion-option-button ng-click="deleteEvent()" class="button-asertive icon ion-trash-a"></ion-option-button>
+        <ion-option-button class="button-assertive icon ion-heart"></ion-option-button>
+        <ion-option-button class="button-energized icon ion-email"></ion-option-button>
+        <ion-option-button ng-click="deleteEvent()" class="button-calm icon ion-trash-a"></ion-option-button>
+
       </ion-item>
+    </ion-list>
+
   </ion-content>
 
   </ion-pane>
