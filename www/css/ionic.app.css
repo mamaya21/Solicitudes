@@ -9803,6 +9803,7 @@ a.button {
   background: none;
   color: white;
   font-weight: 300;
+  font-size:small;
   border: 0px; }
   .side-menu-item .item-content {
     background: none; }
