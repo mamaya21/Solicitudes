@@ -10,61 +10,49 @@ angular.module('app.routes', [])
     
   
 
-      .state('tabsController.cameraTabDefaultPage', {
+      .state('menu.home', {
+    url: '/page1',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/home.html',
+        controller: 'homeCtrl'
+      }
+    }
+  })
+
+  .state('menu.cart', {
     url: '/page2',
     views: {
-      'tab1': {
-        templateUrl: 'templates/cameraTabDefaultPage.html',
-        controller: 'cameraTabDefaultPageCtrl'
+      'side-menu21': {
+        templateUrl: 'templates/cart.html',
+        controller: 'cartCtrl'
       }
     }
   })
 
-  .state('tabsController.cartTabDefaultPage', {
+  .state('menu.cloud', {
     url: '/page3',
     views: {
-      'tab2': {
-        templateUrl: 'templates/cartTabDefaultPage.html',
-        controller: 'cartTabDefaultPageCtrl'
+      'side-menu21': {
+        templateUrl: 'templates/cloud.html',
+        controller: 'cloudCtrl'
       }
     }
   })
 
-  .state('tabsController.cloudTabDefaultPage', {
-    url: '/page4',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/cloudTabDefaultPage.html',
-        controller: 'cloudTabDefaultPageCtrl'
-      }
-    }
-  })
-
-  .state('tabsController', {
-    url: '/page1',
-    templateUrl: 'templates/tabsController.html',
-    abstract:true
-  })
-
-  .state('signup', {
-    url: '/page5',
-    templateUrl: 'templates/signup.html',
-    controller: 'signupCtrl'
+  .state('menu', {
+    url: '/side-menu21',
+    templateUrl: 'templates/menu.html',
+    controller: 'menuCtrl'
   })
 
   .state('login', {
-    url: '/page6',
+    url: '/page4',
     templateUrl: 'templates/login.html',
     controller: 'loginCtrl'
   })
 
-  .state('listado', {
-    url: '/page7',
-    templateUrl: 'templates/listado.html',
-    controller: 'listadoCtrl'
-  })
-
-$urlRouterProvider.otherwise('/page1/page2')
+$urlRouterProvider.otherwise('/page4')
 
   
 

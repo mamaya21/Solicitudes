@@ -17,9 +17,8 @@
     -->
 
     
-    
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/ionic.app.css" rel="stylesheet">
+    
 
     <style type="text/css">
       .platform-ios .manual-ios-statusbar-padding{
@@ -67,40 +66,12 @@
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
   <div>
-  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
-    <ion-side-menu-content>
-      <ion-nav-bar class="bar-positive">
-        <ion-nav-back-button></ion-nav-back-button>
-        <ion-nav-buttons side="left">
-          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
-        </ion-nav-buttons>
-      </ion-nav-bar>
-      <ion-nav-view></ion-nav-view>
-    </ion-side-menu-content>
-    <ion-side-menu side="left" id="side-menu21">
-      <ion-content ng-controller="menuCtrl" padding="false" style="top:0px !important;" class="side-menu-left side-menu-gradient">
-        <div class="spacer" data-componentid="spacer1" style="width: 268px; height: 31px;"></div>
-        <div class="profile-image" data-componentid="image1">
-          <img src="img/ge.jpg" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
-        </div>
-        <h4 id="menu-heading1" style="color:#FFFFFF;font-weight:400;text-align:center;" data-componentid="heading1">Grupo Perú Alfa</h4>
-        <div class="spacer" data-componentid="spacer2" style="width: 268px; height: 18px;"></div>
-        <ion-list id="menu-list1" data-componentid="list1">
-          <ion-item class="item-icon-left  side-menu-item" id="menu-list-item4" ui-sref="signup" menu-close="" data-componentid="list-item4">
-            <i class="icon ion-android-create"></i>Registrar Solicitud</ion-item>
-          <ion-item class="item-icon-left  side-menu-item" id="menu-list-item5" ui-sref="listado" menu-close="" data-componentid="list-item5">
-            <i class="icon ion-pin"></i>Seguimiento Solicitud</ion-item>
-          <ion-item class="item-icon-left  side-menu-item" id="menu-list-item6" ui-sref="login" menu-close="" data-componentid="list-item6">
-            <i class="icon ion-ionic"></i>Dashboard</ion-item>
-            <ion-item class="item-icon-left  side-menu-item" id="menu-list-item7" ui-sref="signup" menu-close="" data-componentid="list-item7">
-            <i class="icon ion-pin"></i>Seguimiento Solicitud</ion-item>
-            <hr style="color: #0056b2;" />
-            <ion-item class="item-icon-left  side-menu-item" id="menu-list-item6" ui-sref="listado" menu-close="" data-componentid="list-item6">
-            <i class="icon ion-log-out"></i>Salir</ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-side-menu>
-  </ion-side-menus>
+  <div>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view></ion-nav-view>
+  </div>
 </div>
   </body>
 </html>

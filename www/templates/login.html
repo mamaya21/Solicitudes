@@ -1,19 +1,23 @@
-<ion-view title="Login" id="page6">
-  <ion-content padding="true" class="has-header">
-    <form id="login-form2" class="list">
-      <ion-list id="login-list3">
-        <label class="item item-input" id="login-input4">
-          <span class="input-label">Email</span>
-          <input type="email" placeholder="">
+<ion-view title="Login" hide-nav-bar="true" id="page4" style="background-color:#F85032;">
+  <ion-content padding="true" class="manual-ios-statusbar-padding" scroll="false">
+    <form id="login-form1" class="list center-form">
+      <div>
+        <img src="img/4X0O0KBhQ9SQjF50ZWXG_helpdesk.png" style="display: block; width: 30%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="spacer" style="width: 290px; height: 45px;"></div>
+      <ion-list id="login-list2">
+        <label class="item item-input" id="login-input1">
+          <span class="input-label">Usuario</span>
+          <input type="text" placeholder="Ej: marco2112">
         </label>
-        <label class="item item-input" id="login-input5">
+        <label class="item item-input" id="login-input2">
           <span class="input-label">Password</span>
-          <input type="password" placeholder="">
+          <input type="password" placeholder="******">
         </label>
       </ion-list>
-      <div class="spacer" style="height: 40px;"></div>
-      <button id="login-button2" class="button button-stable  button-block">Log in</button>
-      <a href-inappbrowser="/signup" id="login-button3" class="button button-positive  button-block button-clear">Or create an account</a>
+      <div class="spacer" style="width: 290px; height: 30px;"></div>
+      <a ui-sref="menu.home" id="login-button1" class="button button-stable  button-block">Ingresar</a>
+      <a href-inappbrowser="/signup" id="login-button2" class="button button-light  button-block button-clear">Ir a la web</a>
     </form>
   </ion-content>
 </ion-view>

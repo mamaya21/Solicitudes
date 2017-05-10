@@ -1,0 +1,34 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21">
+    <ion-content padding="true" style="top:0px !important;" class="side-menu-left side-menu-gradient">
+      <div class="spacer" style="width: 268px; height: 31px;"></div>
+      <div class="profile-image">
+        <img src="img/LqNNIx3R5WLzNTqscl6g_ge.jpg" style="display: block; width: 40%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <h4 id="menu-heading1" style="color:#FFFFFF;font-weight:300;text-align:center;">Grupo Perú Alfa</h4>
+      <div class="spacer" style="width: 268px; height: 27px;"></div>
+      <ion-list id="menu-list1" class="manual-list-fullwidth">
+        <ion-item class="item-icon-left  side-menu-item" id="menu-list-item1" ui-sref="menu.home" menu-close="">
+          <i class="icon ion-ios-compose-outline"></i>Registrar Solicitud</ion-item>
+        <ion-item class="item-icon-left  side-menu-item" id="menu-list-item2" ui-sref="menu.cart" menu-close="">
+          <i class="icon ion-ios-copy-outline"></i>Mis Solicitudes</ion-item>
+        <ion-item class="item-icon-left  side-menu-item" id="menu-list-item3" ui-sref="menu.cloud" menu-close="">
+          <i class="icon ion-ios-paperplane-outline"></i>Seguimiento Solicitud</ion-item>
+        <ion-item class="item-icon-left  side-menu-item" id="menu-list-item5" ui-sref="menu.cloud" menu-close="">
+          <i class="icon ion-social-buffer-outline"></i>Mantenimiento General</ion-item>
+        <ion-item class="item-icon-left  side-menu-item" id="menu-list-item6" ui-sref="menu.cloud" menu-close="">
+          <i class="icon ion-ionic"></i>Dashboard</ion-item>
+      </ion-list>
+      <button id="menu-button3" class="button button-positive  button-block">Tap me!</button>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
